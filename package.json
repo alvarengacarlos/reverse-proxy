@@ -2,13 +2,14 @@
   "name": "reverse-proxy",
   "version": "1.0.0",
   "description": "this is a reverse proxy",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test:unit": "jest ./test/unit",
-    "test:integration": "jest ./test/integration"
+    "test:integration": "jest ./test/integration",
+    "lint": "eslint --fix lib test"
   },
   "repository": {
     "type": "git",
