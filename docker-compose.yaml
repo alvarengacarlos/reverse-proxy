@@ -7,6 +7,8 @@ services:
     ports:
       - '3000:3000'
     working_dir: '/home/node/reverse-proxy'
+    environment:
+      - IS_DEV_MODE=$IS_DEV_MODE
     volumes:
       - './:/home/node/reverse-proxy'
     depends_on: 
